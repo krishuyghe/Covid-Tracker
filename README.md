@@ -1,29 +1,10 @@
----
-name: Xamarin.Forms - Todo
-description: 'This sample demonstrates a Todo list application where the data is stored and accessed in a local SQLite database (get started)'
-page_type: sample
-languages:
-- csharp
-products:
-- xamarin
-extensions:
-    tags:
-    - getstarted
-urlFragment: todo
----
-# Todo
+Covid 19 tracker voor België 
 
-This sample demonstrates a Todo list application where the data is stored and accessed in a local SQLite database.
+Deze is gebasseert op de vragenlijst die de trackers stellen
+De data wordt in de applet bewaard
+Je kan ten alletijden data toevoegen/wijzigen/of verwijderen
 
-The app functionality is:
+Deze applet is gebasseerd op de voorbeeldapplet van microsoft todo list.
 
-- View a list of tasks.
-- Add a new item to the list of tasks.
-- Set a task's status to 'completed'.
-
-In all cases the tasks are stored in a local SQLite database.
-
-For more information about the sample see [Working with a Local Database](https://docs.microsoft.com/xamarin/xamarin-forms/data-cloud/data/databases).
-
-![Todo application screenshot](Screenshots/01All.png "Todo application screenshot")
+Wil U eraan meewerken om dit te verbeteren laat mij het weten. 
 
