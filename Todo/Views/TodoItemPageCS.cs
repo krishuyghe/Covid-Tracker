@@ -6,7 +6,7 @@ namespace Todo
     {
         public TodoItemPageCS()
         {
-            Title = "Todo Item";
+            Title = "Covid Pages";
 
             var nameEntry = new Entry();
             nameEntry.SetBinding(Entry.TextProperty, "Name");
@@ -47,7 +47,7 @@ namespace Todo
                 {
                     new Label { Text = "Name" },
                     nameEntry,
-                    new Label { Text = "Notes" },
+                    new Label { Text = "Notesdddddddddddddddddddd" },
                     notesEntry,
                     new Label { Text = "Done" },
                     doneSwitch,

@@ -8,7 +8,7 @@ namespace Todo
 
         public TodoListPageCS()
         {
-            Title = "Todo";
+            Title = "Covid Contacts";
 
             var toolbarItem = new ToolbarItem
             {

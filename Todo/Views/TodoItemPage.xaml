@@ -1,36 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Todo.TodoItemPage" Title="{Binding Name}">
+    <ScrollView>
     <StackLayout Margin="20" VerticalOptions="StartAndExpand">
+        <Label Text="Datum ontmoeting:" />
+        <DatePicker Date="{Binding SelectedTime}" />
         <Label Text="Naam" />
         <Entry Text="{Binding Name}" />
         <Label Text="Voornaam" />
         <Entry Text="{Binding FirstName}" />
-        <Label Text="Voornaam" />
+        <Label Text="Telefoonnummer" />
         <Entry Text="{Binding Phone}" />
-        <Label Text="Voornaam" />
+        <Label Text="Adres" />
         <Entry Text="{Binding Adress}" />
-        <Label Text="Voornaam" />
 
-        <Label Text="Huisgenoot" />
-        <Switch IsToggled="{Binding HouseMember}" />
-        <Label Text="Lief/partner niet samenwonend" />
-        <Switch IsToggled="{Binding Lover}" />
-        <Label Text="Klasgenoot" />
-        <Switch IsToggled="{Binding Classmate}" />
-        <Label Text="Collega" />
-        <Switch IsToggled="{Binding Colleague}" />
-        <Label Text="Zelfde transport" />
-        <Switch IsToggled="{Binding SameTransport}" />
-        <Label Text="Ander contact" />
-        <Switch IsToggled="{Binding OtherContact}" />
-        <Label Text="Contact kleiner dan 1,5 meter" />
-        <Switch IsToggled="{Binding NearContact}" />
-        <Label Text="Contact groter dan 15 minuten" />
-        <Switch IsToggled="{Binding LongContact}" />
-        <Label Text="Lichamelijk contact" />
-        <Switch IsToggled="{Binding CloseContact}" />
-        <Label Text="Medisch personeel" />
-        <Switch IsToggled="{Binding MedicalProfessional}" />
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Huisgenoot" />
+            <Switch IsToggled="{Binding HouseMember}"  />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Lief/partner niet samenwonend" />
+            <Switch IsToggled="{Binding Lover}" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Klasgenoot" />
+            <Switch IsToggled="{Binding Classmate}" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Collega" />
+            <Switch IsToggled="{Binding Colleague}" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Zelfde transport" />
+            <Switch IsToggled="{Binding SameTransport}" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Ander contact" />
+            <Switch IsToggled="{Binding OtherContact}" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Contact kleiner dan 1,5 meter" />
+            <Switch IsToggled="{Binding NearContact}" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Contact groter dan 15 minuten" />
+            <Switch IsToggled="{Binding LongContact}" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Lichamelijk contact" />
+            <Switch IsToggled="{Binding CloseContact}" />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Medisch personeel" />
+            <Switch IsToggled="{Binding MedicalProfessional}" />
+        </StackLayout>
+        
 
 
         <Label Text="Notes" />
@@ -41,4 +64,5 @@
         <Button Text="Delete" Clicked="OnDeleteClicked" />
         <Button Text="Cancel" Clicked="OnCancelClicked" />
     </StackLayout>
+        </ScrollView>
 </ContentPage>
