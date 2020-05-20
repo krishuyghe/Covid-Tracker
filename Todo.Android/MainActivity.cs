@@ -4,7 +4,7 @@ using Android.Content.PM;
 
 namespace Todo
 {
-    [Activity(Label = "Todo", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true,
+    [Activity(Label = "Covid 19 Tracker", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true,
         ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity :  global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {

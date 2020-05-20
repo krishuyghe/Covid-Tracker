@@ -19,10 +19,13 @@ namespace Todo
 
         async void OnItemAdded(object sender, EventArgs e)
         {
+            var text = new TodoItem();
+            text.SelectedTime = DateTime.Now;
             await Navigation.PushAsync(new TodoItemPage
             {
-                BindingContext = new TodoItem()
-            });
+
+                BindingContext = text
+            }) ;
         }
 
         async void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)

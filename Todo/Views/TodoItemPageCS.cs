@@ -47,7 +47,7 @@ namespace Todo
                 {
                     new Label { Text = "Name" },
                     nameEntry,
-                    new Label { Text = "Notesdddddddddddddddddddd" },
+                    new Label { Text = "Note" },
                     notesEntry,
                     new Label { Text = "Done" },
                     doneSwitch,
