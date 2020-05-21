@@ -14,44 +14,44 @@
         <Entry Text="{Binding Adress}" />
 
         <StackLayout Orientation="Horizontal">
-            <Label Text="Huisgenoot" />
-            <Switch IsToggled="{Binding HouseMember}"  />
+                <Label Text="Huisgenoot" HorizontalOptions="StartAndExpand" />
+                <Switch IsToggled="{Binding HouseMember}"  HorizontalOptions="End"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-            <Label Text="Lief/partner niet samenwonend" />
-            <Switch IsToggled="{Binding Lover}" />
+                <Label Text="Lief/partner niet samenwonend" HorizontalOptions="StartAndExpand"/>
+                <Switch IsToggled="{Binding Lover}" HorizontalOptions="End"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-            <Label Text="Klasgenoot" />
-            <Switch IsToggled="{Binding Classmate}" />
+                <Label Text="Klasgenoot" HorizontalOptions="StartAndExpand"/>
+                <Switch IsToggled="{Binding Classmate}" HorizontalOptions="End"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-            <Label Text="Collega" />
-            <Switch IsToggled="{Binding Colleague}" />
+                <Label Text="Collega" HorizontalOptions="StartAndExpand" />
+                <Switch IsToggled="{Binding Colleague}" HorizontalOptions="End"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-            <Label Text="Zelfde transport" />
-            <Switch IsToggled="{Binding SameTransport}" />
+                <Label Text="Zelfde transport" HorizontalOptions="StartAndExpand" />
+                <Switch IsToggled="{Binding SameTransport}" HorizontalOptions="End"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-            <Label Text="Ander contact" />
-            <Switch IsToggled="{Binding OtherContact}" />
+                <Label Text="Ander contact" HorizontalOptions="StartAndExpand"/>
+                <Switch IsToggled="{Binding OtherContact}" HorizontalOptions="End" />
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-            <Label Text="Contact kleiner dan 1,5 meter" />
-            <Switch IsToggled="{Binding NearContact}" />
+                <Label Text="Contact kleiner dan 1,5 meter" HorizontalOptions="StartAndExpand" />
+                <Switch IsToggled="{Binding NearContact}" HorizontalOptions="End" />
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-            <Label Text="Contact groter dan 15 minuten" />
-            <Switch IsToggled="{Binding LongContact}" />
+                <Label Text="Contact groter dan 15 minuten" HorizontalOptions="StartAndExpand" />
+                <Switch IsToggled="{Binding LongContact}"  HorizontalOptions="End"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-            <Label Text="Lichamelijk contact" />
-            <Switch IsToggled="{Binding CloseContact}" />
+                <Label Text="Lichamelijk contact" HorizontalOptions="StartAndExpand" />
+                <Switch IsToggled="{Binding CloseContact}"  HorizontalOptions="End"/>
         </StackLayout>
         <StackLayout Orientation="Horizontal">
-            <Label Text="Medisch personeel" />
-            <Switch IsToggled="{Binding MedicalProfessional}" />
+                <Label Text="Medisch personeel" HorizontalOptions="StartAndExpand" />
+                <Switch IsToggled="{Binding MedicalProfessional}"  HorizontalOptions="End"/>
         </StackLayout>
         
 

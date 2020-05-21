@@ -33,7 +33,7 @@ namespace Todo
         public string TotalString
         {
            get => _totalString;
-            set { _totalString = SelectedTime + " " + Name + " " + FirstName; }
+            set { _totalString = SelectedTime.ToString("dd-MM-yyyy") + " " + Name + " " + FirstName; }
         }
     }
 }
