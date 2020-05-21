@@ -7,8 +7,13 @@
                     <On Platform="Android, UWP" Value="plus.png" />
                 </OnPlatform>
             </ToolbarItem.IconImageSource>
+            
+        </ToolbarItem>
+        <ToolbarItem Text="Zend" Clicked="OnSentClicked">
+            
         </ToolbarItem>
     </ContentPage.ToolbarItems>
+    
     <ListView x:Name="listView" Margin="20" ItemSelected="OnListItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
@@ -20,5 +25,8 @@
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
+        
     </ListView>
+   
+    
 </ContentPage>

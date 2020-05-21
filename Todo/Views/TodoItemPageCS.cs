@@ -38,6 +38,8 @@ namespace Todo
             {
                 await Navigation.PopAsync();
             };
+           
+           
 
             Content = new StackLayout
             {

@@ -7,7 +7,7 @@ namespace Todo
     public class TodoItem
     {
         private string _totalString;
-      
+        private string _outputData;
 
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
@@ -34,6 +34,19 @@ namespace Todo
         {
            get => _totalString;
             set { _totalString = SelectedTime.ToString("dd-MM-yyyy") + " " + Name + " " + FirstName; }
+        }
+        public string OutputData
+        {
+            get => _outputData;
+            set {
+                _outputData = SelectedTime.ToString("dd-MM-yyyy") + " Naam:" + Name + " Voornaam" + FirstName + " Telefoon:" + Phone
+                  + " Adres:" + Adress + " Huisgenoot:" + HouseMember + " Lief/partner:" + Lover + " Klasgenoot:" + Classmate + " Collega:" + Colleague
+                  + " Zelfde Transport:" + SameTransport + "Ander Contact:" + OtherContact + " < 1.5 meter:" + NearContact + " > 15 min:" + LongContact 
+                  + " Fysiek Contact:" + CloseContact + " Medisch Professional:" + MedicalProfessional + " Nog opmerkingen:" + Notes +
+                  "\n"
+
+              ;
+            }
         }
     }
 }

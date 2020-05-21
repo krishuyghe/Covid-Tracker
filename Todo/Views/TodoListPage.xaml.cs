@@ -1,4 +1,6 @@
 ﻿using System;
+using System.IO;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Todo
@@ -37,6 +39,30 @@ namespace Todo
                     BindingContext = e.SelectedItem as TodoItem
                 });
             }
+        }
+        async void OnSentClicked(object sender, EventArgs e)
+        {
+            var message = new EmailMessage
+            {
+                Subject = "Log info van Covid trakker applet",
+                Body = "In bijlage de file",
+            };
+
+            var fn = "Attachment.txt";
+            var file = Path.Combine(FileSystem.CacheDirectory, fn);
+            var readDatabase = await App.Database.GetItemsAsync();
+            string outputData = "";
+            foreach (var record in readDatabase)
+            {
+                outputData += record.OutputData;
+
+            }
+
+            File.WriteAllText(file, outputData);
+
+            message.Attachments.Add(new EmailAttachment(file));
+
+            await Email.ComposeAsync(message);
         }
     }
 }
