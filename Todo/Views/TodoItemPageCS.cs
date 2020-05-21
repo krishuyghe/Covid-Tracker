@@ -2,7 +2,7 @@
 
 namespace Todo
 {
-    public class TodoItemPageCS : ContentPage
+    public class   TodoItemPageCS : ContentPage
     {
         public TodoItemPageCS()
         {

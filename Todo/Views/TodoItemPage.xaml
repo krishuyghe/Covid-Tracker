@@ -62,7 +62,7 @@
         <Switch IsToggled="{Binding Done}" />-->
         <Button Text="Bewaar" Clicked="OnSaveClicked" />
         <Button Text="Verwijder" Clicked="OnDeleteClicked" />
-        <Button Text="Cancel" Clicked="OnCancelClicked" />
+        <Button Text="Terug zonder bewaren" Clicked="OnCancelClicked" />
         
         </StackLayout>
         </ScrollView>
