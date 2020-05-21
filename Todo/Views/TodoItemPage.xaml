@@ -64,6 +64,8 @@
         <Button Text="Verwijder" Clicked="OnDeleteClicked" />
         <Button Text="Terug zonder bewaren" Clicked="OnCancelClicked" />
         
+            
+
         </StackLayout>
         </ScrollView>
 </ContentPage>
